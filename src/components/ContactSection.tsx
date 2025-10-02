@@ -14,14 +14,14 @@ const ContactSection = () => {
       icon: Linkedin,
       label: "LinkedIn",
       value: "Connect with me",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/muhammadmurtuzahussain/",
       cta: "Connect"
     },
     {
       icon: Mail,
       label: "Email",
-      value: "Get in touch",
-      href: "mailto:contact@muhammadmurtuza.com",
+      value: "muhammadmurtuzahussain@gmail.com",
+      href: "mailto:muhammadmurtuzahussain@gmail.com",
       cta: "Send Email"
     }
   ];
@@ -82,11 +82,11 @@ const ContactSection = () => {
             className="font-semibold px-8"
           >
             <a 
-              href="mailto:contact@muhammadmurtuza.com?subject=Free Cybersecurity Consultation"
+              href="https://calendly.com/muhammadmurtuzahussain/new-meeting"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Schedule Consultation
+              Book Consultation
             </a>
           </Button>
         </div>

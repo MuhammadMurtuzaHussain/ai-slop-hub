@@ -1,4 +1,5 @@
 import { Award, Users, TrendingUp } from "lucide-react";
+import profileImage from "@/assets/muhammad-murtuza.png";
 
 const stats = [
   {
@@ -23,8 +24,19 @@ const AboutSection = () => {
     <section className="py-20 px-4 bg-background">
       <div className="container mx-auto max-w-5xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* Bio */}
+          {/* Bio with Image */}
           <div className="animate-fade-in-up">
+            <div className="mb-8">
+              <div className="relative inline-block">
+                <div className="absolute inset-0 gradient-hero rounded-full blur-2xl opacity-60" />
+                <img
+                  src={profileImage}
+                  alt="Muhammad Murtuza - Cybersecurity Consultant"
+                  className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary shadow-glow-pink"
+                />
+              </div>
+            </div>
+            
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gradient">
               About Muhammad
             </h2>
