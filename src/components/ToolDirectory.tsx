@@ -53,7 +53,7 @@ const ToolDirectory = () => {
           AI Tools Directory
         </h2>
         <p className="text-center text-muted-foreground text-lg mb-16 max-w-2xl mx-auto">
-          Since you clearly need help with everything, here's a curated list of AI tools to make your life easier.
+          While AI can't replace good judgment (or a solid cybersecurity strategy), here are some tools that might help you work smarter.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in-up">

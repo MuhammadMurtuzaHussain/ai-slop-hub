@@ -82,11 +82,11 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground mb-4">
               <strong className="text-foreground">Disclaimer:</strong> This site is a humorous parody of AI overuse 
               and is not meant to shame individuals. We actually love AI tools and think they're incredibly useful! 
-              This is all in good fun. 😊
+              This is also a genuine offer of professional cybersecurity services. All in good fun. 😊
             </p>
             
             <p className="text-xs text-muted-foreground flex items-center justify-center gap-1">
-              Made with <Heart className="h-3 w-3 text-primary fill-primary" /> by AI enthusiasts
+              Made with <Heart className="h-3 w-3 text-primary fill-primary" /> and a healthy dose of sarcasm
             </p>
           </div>
 
