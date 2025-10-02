@@ -49,7 +49,7 @@ const ContactSection = () => {
                   <Icon className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">{method.label}</h3>
-                <p className="text-muted-foreground text-sm mb-4">{method.value}</p>
+                <p className="text-muted-foreground text-sm mb-4">Check out!</p>
                 <Button
                   asChild
                   variant="outline"
