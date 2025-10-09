@@ -2,10 +2,8 @@ import { Moon, Sun, Heart, ExternalLink } from "lucide-react";
 import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
 import creatorImage from "@/assets/muhammad-murtuza.png";
-
 const Footer = () => {
   const [theme, setTheme] = useState<"light" | "dark">("light");
-
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
     if (savedTheme) {
@@ -17,16 +15,13 @@ const Footer = () => {
       document.documentElement.classList.toggle("dark", prefersDark);
     }
   }, []);
-
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
     document.documentElement.classList.toggle("dark", newTheme === "dark");
   };
-
-  return (
-    <footer className="py-16 px-4 border-t border-border bg-card">
+  return <footer className="py-16 px-4 border-t border-border bg-card">
       <div className="container mx-auto">
         <div className="flex flex-col items-center gap-8">
           {/* Creator Section */}
@@ -34,20 +29,11 @@ const Footer = () => {
             <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">
               Created By
             </p>
-            <a
-              href="https://muhammadmurtuza.framer.website"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-block"
-            >
+            <a href="https://muhammadmurtuza.framer.website" target="_blank" rel="noopener noreferrer" className="group inline-block">
               <div className="flex flex-col items-center gap-4 transition-smooth hover:scale-105">
                 <div className="relative">
                   <div className="absolute inset-0 gradient-hero rounded-full blur-xl opacity-50 group-hover:opacity-75 transition-smooth" />
-                  <img
-                    src={creatorImage}
-                    alt="Muhammad Murtuza - Creator of iloveai.com"
-                    className="relative w-24 h-24 rounded-full object-cover border-4 border-primary shadow-glow-pink"
-                  />
+                  <img src={creatorImage} alt="Muhammad Murtuza - Creator of iloveai.com" className="relative w-24 h-24 rounded-full object-cover border-4 border-primary shadow-glow-pink" />
                 </div>
                 <div className="flex items-center gap-2">
                   <h3 className="text-2xl font-bold group-hover:text-gradient transition-smooth">
@@ -55,26 +41,14 @@ const Footer = () => {
                   </h3>
                   <ExternalLink className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-smooth" />
                 </div>
-                <p className="text-sm text-muted-foreground">
-                  Designer & Developer
-                </p>
+                <p className="text-sm text-muted-foreground">Storyteller | Cybersecurity Consultant | Entrepreneur </p>
               </div>
             </a>
           </div>
 
           {/* Theme Toggle */}
-          <Button
-            variant="outline"
-            size="icon"
-            onClick={toggleTheme}
-            className="rounded-full transition-smooth hover:scale-110"
-            aria-label="Toggle theme"
-          >
-            {theme === "light" ? (
-              <Moon className="h-5 w-5" />
-            ) : (
-              <Sun className="h-5 w-5" />
-            )}
+          <Button variant="outline" size="icon" onClick={toggleTheme} className="rounded-full transition-smooth hover:scale-110" aria-label="Toggle theme">
+            {theme === "light" ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
           </Button>
 
           {/* Disclaimer */}
@@ -96,8 +70,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
