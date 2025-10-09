@@ -20,11 +20,11 @@ const Hero = () => {
         </h1>
         
         <div className="max-w-5xl mx-auto mb-12 animate-fade-in-up [animation-delay:200ms]">
-          <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-relaxed mb-8">
-            Can't even write a simple message or email by yourself and had to ask AI to do it better for you?
+          <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-8">
+            <span className="font-bold">Can't even write</span> a simple message or email by yourself and had to <span className="font-bold">ask AI</span> to do it better for you?
             <br />
             <span className="text-white/95">
-              While you think it is smart, we all know it is slop.
+              While you think it is smart, we all know it is <span className="font-bold">slop</span>.
             </span>
           </p>
         </div>
