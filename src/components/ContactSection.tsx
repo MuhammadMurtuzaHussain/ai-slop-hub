@@ -6,21 +6,21 @@ const ContactSection = () => {
     {
       icon: Globe,
       label: "Portfolio",
-      value: "muhammadmurtuza.framer.website",
+      value: "Check out",
       href: "https://muhammadmurtuza.framer.website",
       cta: "Visit Website"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "Connect with me",
+      value: "Digital CV",
       href: "https://www.linkedin.com/in/muhammadmurtuzahussain/",
       cta: "Connect"
     },
     {
       icon: Mail,
       label: "Email",
-      value: "muhammadmurtuzahussain@gmail.com",
+      value: "Say Hi",
       href: "mailto:muhammadmurtuzahussain@gmail.com",
       cta: "Send Email"
     }
@@ -49,7 +49,7 @@ const ContactSection = () => {
                   <Icon className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">{method.label}</h3>
-                <p className="text-muted-foreground text-sm mb-4">Check out!</p>
+                <p className="text-muted-foreground text-sm mb-4">{method.value}</p>
                 <Button
                   asChild
                   variant="outline"
