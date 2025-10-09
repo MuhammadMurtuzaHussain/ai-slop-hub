@@ -29,7 +29,7 @@ const AboutSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gradient">
               About Muhammad
             </h2>
-            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">Ethical hacker, consultant, and educator helping businesses stay secure in an increasingly digital world. With over a decade of experience in cybersecurity, I've protected organizations from threats both old and new (yes, even AI-powered ones).</p>
+            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">Ethical hacker, consultant, and educator helping businesses stay secure in an increasingly digital world. With over a decade of experience in cybersecurity, I've protected organisations from threats both old and new (yes, even AI-powered ones).</p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               When I'm not breaking into systems (legally!), I'm probably exploring the latest AI tools or explaining 
               why your password shouldn't be "Password123".
