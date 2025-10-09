@@ -10,7 +10,7 @@ const stats = [
   {
     icon: Award,
     value: "10+",
-    label: "Years Experience"
+    label: "Hackathons Won"
   },
   {
     icon: TrendingUp,
